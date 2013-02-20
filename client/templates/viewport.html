@@ -1,0 +1,17 @@
+<template name="viewport">
+  <div class="viewport">
+    {{> stage }}
+  </div>
+</template>
+
+<template name="stage">
+  <div class="stage">
+    {{#each players }}
+      {{> player }}
+    {{/each}}
+  </div>
+</template>
+
+<template name="player">
+  <div class="player" style="left: {{left}}px">{{name}}</player>
+</template>
